@@ -180,58 +180,41 @@
       <div class="plan-section section-div" id="plans-section">
         <h1 class="section-title wow fadeInUp">Plans</h1>
         <div class="row">
-            <div class="col-md-4">
-                <div class="mt-widget-3">
-                    <div class="mt-head bg-blue-hoki">
-                        <div class="mt-head-icon">
-                          <button type="button" class="btn btn-warning">Free</button>
-                        </div>
-                        <span class="mt-head-desc"><ol>
-                        <li>Free recorded training classes</li>
-                        <li>Free marketing</li>
-                        <li>No Job Guarantee</li>
-                        <li>No H1B until in project</li>
-                        </ol>
-                        </span>
-                    </div>
-                </div>
-            </div>
+          <div class='package bg-grey-gallery bg-font-grey-gallery col-lg-4'>
+            <button type="button" class="btn btn-warning btn-lg">Free</button>  
+            <hr>
+            <ul>
+                <li>Free recorded training classes</li>
+                <li>Free marketing</li>
+                <li>No Job Guarantee</li>
+                <li>No H1B until in project</li>
+            </ul>
+          </div>
 
-            <div class="col-md-4">
-                <div class="mt-widget-3">
-                    <div class="mt-head bg-blue-hoki">
-                        <div class="mt-head-icon">
-                            <button type="button" class="btn btn-success">Gold</button>
-                        </div>
-                        <span class="mt-head-desc"><ol>
-                        <li>Live training classes</li>
-                        <li>Free marketing</li>
-                        <li>Job Guarantee or Refund **</li>
-                        <li>Mock Interviews </li>
-                        <li>No H1B until in project</li>
-                        </ol>
-                        </span>
-                    </div>
-                </div>
-            </div>
+          <div class='package bg-grey-gallery bg-font-grey-gallery col-lg-4'>
+            <button type="button" class="btn btn-success btn-lg">Gold</button> 
+            <hr>
+            <ul>
+                <li>Live training classes</li>
+                <li>Free marketing</li>
+                <li>Job Guarantee or Refund **</li>
+                <li>Mock Interviews </li>
+                <li>No H1B until in project</li>
+            </ul>
+          </div>
 
-            <div class="col-md-4">
-                <div class="mt-widget-3">
-                    <div class="mt-head bg-blue-hoki">
-                        <div class="mt-head-icon">
-                            <button type="button" class="btn btn-danger">Platinum</button>
-                        </div>
-                       <span class="mt-head-desc"><ol>
-                        <li>Live training classes</li>
-                        <li>Free marketing</li>
-                        <li>Mock Interviews </li>
-                        <li>Job Guarantee or Refund **</li>                        
-                        <li>H1B with internal project**</li>
-                        </ol>
-                        </span>
-                    </div>
-                </div>
-            </div>
+          <div class='package bg-grey-gallery bg-font-grey-gallery col-lg-4'>
+            <button type="button" class="btn btn-danger btn-lg">Platinum</button> 
+            <hr>
+            <ul>
+                <li>Live training classes</li>
+                <li>Free marketing</li>
+                <li>Mock Interviews </li>
+                <li>Job Guarantee or Refund **</li>                        
+                <li>H1B with internal project**</li>
+            </ul>
+          </div>
+
         </div>
       </div>
 
