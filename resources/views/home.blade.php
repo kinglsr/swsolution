@@ -180,7 +180,7 @@
       <div class="plan-section section-div" id="plans-section">
         <h1 class="section-title wow fadeInUp">Plans</h1>
         <div class="row">
-          <div class='package bg-grey-gallery bg-font-grey-gallery col-lg-4'>
+          <div class='package bg-grey-gallery bg-font-grey-gallery col-sm-3 col-md-3'>
             <button type="button" class="btn btn-warning btn-lg">Free</button>  
             <hr>
             <ul>
@@ -191,7 +191,7 @@
             </ul>
           </div>
 
-          <div class='package bg-grey-gallery bg-font-grey-gallery col-lg-4'>
+          <div class='package bg-grey-gallery bg-font-grey-gallery col-sm-3 col-md-3'>
             <button type="button" class="btn btn-success btn-lg">Gold</button> 
             <hr>
             <ul>
@@ -203,7 +203,7 @@
             </ul>
           </div>
 
-          <div class='package bg-grey-gallery bg-font-grey-gallery col-lg-4'>
+          <div class='package bg-grey-gallery bg-font-grey-gallery col-sm-3 col-md-3'>
             <button type="button" class="btn btn-danger btn-lg">Platinum</button> 
             <hr>
             <ul>
