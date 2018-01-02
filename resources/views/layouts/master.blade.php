@@ -1,8 +1,8 @@
 <meta charset="utf-8" />
-<title>SWSolution</title>
+<title>SWTech Solution</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1" name="viewport" />
-<meta content="SW SOLUTION CONSULTANCY" name="description" />
+<meta content="SWTech SOLUTIONs CONSULTANCY" name="description" />
 <meta content="" name="author" />
 <meta name="csrf-token" content="{{ csrf_token() }}" />
 <!--css begins-->
@@ -26,7 +26,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">SW Solutions</a>
+      <a class="navbar-brand" href="#">SWTech Solutions</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
