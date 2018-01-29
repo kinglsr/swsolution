@@ -254,17 +254,18 @@
                       <div class="c-line-left bg-dark"></div>
                       <p class="c-font-lowercase">Our helpline is always open to receive any inquiry or feedback. Please feel free to drop us an email from the form below and we will get back to you as soon as we can.</p>
                   </div>
-                  <form action="#">
+                  <form id="messageForm">
+                      {{ csrf_field() }}
                       <div class="form-group">
-                          <input type="text" placeholder="Your Name" class="form-control input-md"> </div>
+                          <input type="text" placeholder="Your Name" class="form-control input-md" name="name" required> </div>
                       <div class="form-group">
-                          <input type="text" placeholder="Your Email" class="form-control input-md"> </div>
+                          <input type="email" placeholder="Your Email" class="form-control input-md" name="email" required> </div>
                       <div class="form-group">
-                          <input type="text" placeholder="Contact Phone" class="form-control input-md"> </div>
+                          <input type="text" placeholder="Contact Phone" class="form-control input-md" name="contact" required> </div>
                       <div class="form-group">
-                          <textarea rows="8" name="message" placeholder="Write comment here ..." class="form-control input-md"></textarea>
+                          <textarea rows="8" name="message" placeholder="Write comment here ..." class="form-control input-md" name="message" required></textarea>
                       </div>
-                      <button type="submit" class="btn red-mint btn-outline sbold uppercase btn-lg">Submit</button>
+                      <button type="submit" class="btn red-mint btn-outline sbold uppercase btn-lg sendMessage">Submit</button>
                   </form>
               </div>
           </div>
@@ -327,5 +328,45 @@
 
 @endsection
 @section('page-scripts')
+<script type="text/javascript">
+$(function(){
+    $(document).on("submit","#messageForm",function(event){
+      event.preventDefault();
+      var data = $(this).serialize();
+        $.ajax({
+            url:'<?= url('') ?>/newMessage',
+            type:'post',
+            dataType:'json',
+            data:data,
+            success:function(response) {
+              console.log(response);
+            }
+          });
+    });
 
+    validateForm("#messageForm");
+    
+    // form validation function
+    function validateForm(form) {
+        jQuery.validator.addMethod( "phoneNumber", function(value, element, regexp = "^[0-9 ()+-]+$") {
+                // console.log(regexp);
+                var re = new RegExp(regexp);
+                return this.optional( element ) || re.test(value);
+            },
+            "Please enter a valid phone number."
+        );
+
+        $(form).validate({
+            rules: {
+                    "contact": {
+                        phoneNumber: "^[0-9 ()+-]+$" 
+                },
+            },
+            submitHandler: function(form) {
+                return true;
+            }
+        });
+    }
+});
+</script>
 @endsection

@@ -37,3 +37,4 @@ Route::get('/crypto', function () {
     return view('crypto');
 });
 Route::post('/newRegistration','UserController@newRegistration');
+Route::post('/newMessage','UserController@newMessage');
